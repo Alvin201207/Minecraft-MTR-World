@@ -45765,3 +45765,21 @@ a.u-link.u-text-hover-color-var.hover {
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
+/* 手機版自適應修正補丁 */
+@media (max-width: 768px) {
+  .u-sheet {
+    width: 95% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .u-btn {
+    max-width: 90% !important;
+    white-space: normal !important;
+    height: auto !important;
+    margin: 10px auto !important;
+    display: block !important;
+  }
+  h1, h2, h3, h4, p {
+    word-break: break-word !important;
+  }
+}
