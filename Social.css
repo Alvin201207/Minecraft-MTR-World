@@ -73,3 +73,34 @@
 .u-section-2 .u-text-1 {
   margin: 30px auto 60px;
 }
+
+@media (max-width: 575px) {
+   .u-section-2 {
+    min-height: 624px;
+  }
+
+  .u-section-2 .u-btn-1 {
+    padding-right: 152px;
+    padding-left: 152px;
+  }
+
+  .u-section-2 .u-btn-2 {
+    padding-right: 150px;
+    padding-left: 149px;
+  }
+
+  .u-section-2 .u-btn-3 {
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+
+  .u-section-2 .u-btn-4 {
+    padding-right: 121px;
+    padding-left: 120px;
+  }
+
+  .u-section-2 .u-btn-5 {
+    padding-right: 118px;
+    padding-left: 116px;
+  }
+}

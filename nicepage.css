@@ -45712,6 +45712,7 @@ a.u-link.u-text-hover-color-var.hover {
 
 .u-header .u-nav-1 {
   font-size: 1rem;
+  letter-spacing: normal;
 }
 
 .u-header .u-nav-link-2 {
@@ -45728,10 +45729,6 @@ a.u-link.u-text-hover-color-var.hover {
 @media (max-width: 1199px) {
   .u-header .u-menu-1 {
     width: auto;
-  }
-
-  .u-header .u-nav-1 {
-    letter-spacing: normal;
   }
 
   .u-header .u-text-1 {
@@ -45765,21 +45762,3 @@ a.u-link.u-text-hover-color-var.hover {
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
-/* 手機版自適應修正補丁 */
-@media (max-width: 768px) {
-  .u-sheet {
-    width: 95% !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-  .u-btn {
-    max-width: 90% !important;
-    white-space: normal !important;
-    height: auto !important;
-    margin: 10px auto !important;
-    display: block !important;
-  }
-  h1, h2, h3, h4, p {
-    word-break: break-word !important;
-  }
-}
