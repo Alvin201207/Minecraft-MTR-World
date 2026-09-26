@@ -10,7 +10,7 @@
 .u-section-1 .u-text-1 {
   margin: 160px auto -100px;
 } .u-section-2 {
-  min-height: 536px;
+  min-height: 720px;
 }
 
 .u-section-2 .u-shape-1 {
@@ -64,21 +64,26 @@
   padding: 6px 199px 6px 197px;
 }
 
+.u-section-2 .u-btn-6 {
+  --radius: 6px;
+  border-style: solid;
+  font-weight: 700;
+  font-size: 1.875rem;
+  margin: 30px auto 0;
+  padding: 6px 201px 6px 200px;
+}
+
 .u-section-2 .u-shape-2 {
   height: 3px;
-  margin-top: 30px;
+  margin-top: 33px;
   margin-bottom: 0;
 }
 
 .u-section-2 .u-text-1 {
-  margin: 30px auto 60px;
+  margin: 33px auto 34px;
 }
 
 @media (max-width: 575px) {
-   .u-section-2 {
-    min-height: 624px;
-  }
-
   .u-section-2 .u-btn-1 {
     padding-right: 152px;
     padding-left: 152px;
