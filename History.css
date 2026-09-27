@@ -133,6 +133,13 @@
 .u-section-4 .u-btn-1 {
   border-style: solid;
   font-size: 1.875rem;
+  margin: 30px auto 0;
+  padding: 0;
+}
+
+.u-section-4 .u-btn-2 {
+  border-style: solid;
+  font-size: 1.875rem;
   margin: 30px auto 60px;
   padding: 0;
 }
