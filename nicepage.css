@@ -1054,11 +1054,11 @@ ol {
 .u-accordion-link-icon-hidden.u-icon {
   display: none;
 }
-.u-accordion-pane {
+.u-accordion .u-accordion-pane {
   position: relative;
   display: none;
 }
-.u-accordion-pane.u-accordion-active {
+.u-accordion .u-accordion-pane.u-accordion-active {
   display: flex;
 }
 .u-accordion.u-spacing-0 .u-accordion-item:not(:last-child) .u-accordion-link[class*=u-border-] ~ .u-accordion-pane,
@@ -3506,11 +3506,17 @@ aside .u-categories.u-categories-vertical ul {
   opacity: 1;
 }
 section.u-opacity:before,
+section.u-backdrop:before,
 .u-hover-box > .u-opacity.u-container-layout:before,
+.u-hover-box > .u-backdrop.u-container-layout:before,
 .u-opacity > .u-container-layout:before,
+.u-backdrop > .u-container-layout:before,
 .u-opacity > .u-audio-main-layout-wrapper:before,
+.u-backdrop > .u-audio-main-layout-wrapper:before,
 .u-opacity > .u-inner-container-layout:before,
-.u-opacity.u-sidenav:before {
+.u-backdrop > .u-inner-container-layout:before,
+.u-opacity.u-sidenav:before,
+.u-backdrop.u-sidenav:before {
   content: '';
   display: block;
   position: absolute;
@@ -3523,16 +3529,36 @@ section.u-opacity:before,
   border-radius: inherit;
 }
 section.u-opacity,
+section.u-backdrop,
 .u-opacity.u-container-style,
+.u-backdrop.u-container-style,
 .u-hover-box > .u-opacity.u-container-layout,
+.u-hover-box > .u-backdrop.u-container-layout,
 .u-opacity > .u-container-layout,
+.u-backdrop > .u-container-layout,
 .u-opacity > .u-audio-main-layout-wrapper,
-.u-opacity > .u-inner-container-layout {
+.u-backdrop > .u-audio-main-layout-wrapper,
+.u-opacity > .u-inner-container-layout,
+.u-backdrop > .u-inner-container-layout {
   opacity: 1;
 }
 .u-hover-box .u-opacity.u-container-layout,
-.u-opacity.u-container-style {
+.u-hover-box .u-backdrop.u-container-layout,
+.u-opacity.u-container-style,
+.u-backdrop.u-container-style {
   background-color: transparent !important;
+}
+section.u-backdrop:before,
+.u-hover-box > .u-backdrop.u-container-layout:before,
+.u-backdrop > .u-container-layout:before,
+.u-backdrop > .u-audio-main-layout-wrapper:before,
+.u-backdrop > .u-inner-container-layout:before,
+.u-backdrop.u-sidenav:before {
+  /* autoprefixer: ignore next */
+  -webkit-backdrop-filter: blur(var(--backdrop-blur, 0px)) saturate(var(--backdrop-saturate, 100%)) brightness(var(--backdrop-brightness, 100%));
+  backdrop-filter: blur(var(--backdrop-blur, 0px)) saturate(var(--backdrop-saturate, 100%)) brightness(var(--backdrop-brightness, 100%));
+  transition-property: opacity, backdrop-filter;
+  pointer-events: none;
 }
 .u-effect-fade:hover .u-container-layout.u-over-slide.u-opacity {
   opacity: 1;
@@ -7872,8 +7898,8 @@ p {
   object-fit: cover;
   object-position: center;
 }
-.u-show-text-none .u-over-slide {
-  display: none;
+.u-show-text-none:not(.u-form-gallery) .u-over-slide {
+  display: none !important;
 }
 .u-over-slide .u-gallery-heading,
 .u-over-slide .u-gallery-text {
